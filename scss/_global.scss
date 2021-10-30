@@ -22,3 +22,47 @@ body {
 a:hover {
     text-decoration: underline;
 }
+
+.go-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 65px;
+    width: 50px;
+    height: 50px;
+    // border: 1px solid red;
+    border-radius: 50%;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    display: none;
+
+    &:hover,
+    &:focus {
+        filter: brightness(1.5);
+        outline: none;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before {
+        width: 5px; 
+        height: 25px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: $white;
+    }
+
+    &::after {
+        top: 22px;
+        width: 15px;
+        height: 15px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-top: 5px solid $white;
+        border-left: 5px solid $white;
+    }
+}
