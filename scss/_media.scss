@@ -58,6 +58,12 @@
             margin-bottom: 30px;
         }
     }
+
+    // === partners ===
+    .partners {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 1159px) {
@@ -112,14 +118,52 @@
         }
     }
 
+    // === about ===
+    .about {
+        padding-top: 60px;  
+    }
+
+    // === start ===
+    .start {
+        padding-top: 30px;
+    }
+
     // === benefits ===
     .benefits {
         padding-top: 50px;
         padding-bottom: 35px;
 
-        &__title {
+    }
 
+    // === partners ===
+    .partners {
+
+        &__title-box {
+            // margin: 0 auto;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 56px;
         }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__item:nth-child(1), 
+        &__item:nth-child(2), 
+        &__item:nth-child(3), 
+        &__item:nth-child(4), 
+        &__item:nth-child(5), 
+        &__item:nth-child(6), 
+        &__item:nth-child(7), 
+        &__item:nth-child(8){
+            border: none;
+        }
+    }
+
+    // === footer ===
+    .footer {
+        padding-top: 50px;
     }
 }
 
@@ -155,6 +199,64 @@
             margin-bottom: 35px;
         }
     }
+
+    // === benefits ===
+    .benefits {
+
+        &__title {
+            margin-bottom: 80px;
+        }
+    }
+
+    // === partners ===
+    .partners {
+
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            // justify-content: center;
+            // align-items: center;
+        }
+
+        &__item-img {
+            margin: 0 auto;
+        }
+    }
+
+    // === program ===
+    .program {
+        padding-top: 30px;
+
+        &__img {
+            display: none;
+        }
+    }
+
+    // === teachers ===
+    .teachers {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__text-box {
+            margin-bottom: 100px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 861px) {
+    // === teachers ===
+    .teachers {
+
+        &__items {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__item {
+            width: 100%;
+            padding: 0;
+        }
+    }
 }
 
 @media (max-width: 786px) {
@@ -171,10 +273,6 @@
     .about {
         padding-top: 50px;
         padding-bottom: 50px;
-
-        &__title {
-            font-size: 40px;
-        }
     }
 
     // === start ===
@@ -183,20 +281,26 @@
         &__title-box {
             margin: 0 auto 40px auto;
         }
-
-        &__title {
-            font-size: 40px;
-        }
-        
     }
 
     // === benefits ===
     .benefits {
 
         &__title {
-            font-size: 40px;
-            margin-bottom: 90px;
             line-height: 45px;
+        }
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    // === footer ===
+    .footer {
+
+        &__btn {
+            top: 59%;
         }
     }
 }
@@ -244,8 +348,33 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    // === program ===
+    .program {
+        padding-bottom: 40px;
+    }
 }
 
+@media (max-width: 580px) {
+    // === partners ===
+    .partners {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &__img {
+            display: none;
+        }
+
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item {
+            padding: 14px 52px;
+        }
+    }
+
+}
 
 @media (max-width: 500px) {
     // === header ===
@@ -288,8 +417,6 @@
 
         &__title {
             margin-bottom: 35px;
-            font-size: 33px;
-            line-height: 50px;
         }
 
         &__text {
@@ -304,10 +431,6 @@
             margin: 0 auto 40px auto;
         }
 
-        &__title {
-            font-size: 33px;
-        }
-
         &__scale-color-100, 
         &__scale-color-75, 
         &__scale-color-50, 
@@ -317,16 +440,54 @@
         }
     }
 
+    // === parnters ===
+    .partners {
+
+        &__title-box {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            padding: 8px 52px;
+        }
+
+        
+    }
+
     // === benefits ===
     .benefits {
         padding-bottom: 10px;
-        
+
         &__title {
-            font-size: 33px;
-            margin-bottom: 70px;
-            
+            margin-bottom: 50px;
         }
     }
+
+    // === teachers ===
+    .teachers {
+
+        &__text-box {
+            margin-bottom: 60px;
+        }
+
+        &__title {
+            margin-left: 0;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__item-avatar {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .title {
+        font-size: 33px;
+    }
+    
 }
 
 @media (max-width: 410px) {
@@ -354,26 +515,40 @@
         padding-bottom: 40px;
 
         &__title {
-            font-size: 30px;
             margin-bottom: 30px; 
         }
 
     }
 
-    // === start ===
-    .start {
+    // === partners ===
+    .partners {
 
-        &__title {
-            font-size: 30px;
+        &__item-img {
+            width: 70%;
         }
     }
 
-    // === benefits ===
-    .benefits {
+    // === teachers ===
+    .teachers {
+        padding-bottom: 20px;
 
-        &__title {
-            font-size: 30px;
+        &__item {
+            margin-bottom: 40px;
         }
+
+        &__item-name {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        &__item-speciality {
+            margin-bottom: 24px;
+        }
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 36px;
     }
 }
 
@@ -387,30 +562,7 @@
         }
     }
 
-    // === about ===
-    .about {
-
-        &__title {
-            font-size: 25px;
-            line-height: 40px;
-        }
-    }
-
-    // === start ===
-    .start {
-        
-        &__title {
-            font-size: 25px;
-            line-height: 40px;
-        }
-    }
-
-    // === benefits ===
-    .benefits {
-
-        &__title {
-            font-size: 25px;
-            line-height: 40px;
-        }
+    .title {
+        font-size: 25px;    
     }
 }

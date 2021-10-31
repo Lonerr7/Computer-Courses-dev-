@@ -361,11 +361,12 @@
     &__title-box {
         display: flex;
         align-items: center;
+        margin-bottom: 89px;
     }
 
     &__title {
         @extend %title-style;
-        margin-left: 20px;
+        // margin-left: 20px;
     }
 
     &__items {
