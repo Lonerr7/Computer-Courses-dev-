@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
 	<header class="header" id="header">
 		<div class="header__inner">
 			<div class="header__top">
@@ -59,9 +60,16 @@
 				</nav>
 				<!-- /nav.menu -->
 				<a class="header__top-btn" href="#">Зайти в кабинет</a>
+	
+				<a class="burger" href="#">
+					<div class="burger__line burger__line1"></div>
+					<div class="burger__line burger__line2"></div>
+					<div class="burger__line burger__line3"></div>
+				</a>
+				<!-- /burger -->
 			</div>
 			<!-- /header__top -->
-
+	
 			<div class="header__content">
 				<div class="container">
 					<h1 class="header__title">Первый курс по компьютерной сборке</h1>
@@ -103,7 +111,7 @@
 								<span class="header__bottom-infonumber">200</span>
 							</div>
 							<!-- /header__bottom-inforow -->
-
+			
 							<div class="header__bottom-inforow">
 								<p class="header__bottom-infotext">Успешно закончили курс:</p>
 								<span class="header__bottom-infonumber">190</span>
@@ -139,6 +147,37 @@
 		<!-- /header__inner -->
 	</header>	
 	<!-- /header.header -->
+	
+	<!-- -------------------------------- Mobile-menu -------------------------------- -->
+	<div class="menu-mobile__wrapper">
+		<nav class="menu-mobile">
+			<ul class="menu-mobile__list">
+				<li class="menu-mobile__list-item">
+					<a class="menu-mobile__list-link" href="#">Главная</a>
+				</li>
+				<li class="menu-mobile__list-item">
+					<a class="menu-mobile__list-link" href="#">Курсы</a>
+				</li>
+				<li class="menu-mobile__list-item">
+					<a class="menu-mobile__list-link" href="#">Расписание</a>
+				</li>
+				<li class="menu-mobile__list-item">
+					<a class="menu-mobile__list-link" href="#">Преподаватели</a>
+				</li>
+				<li class="menu-mobile__list-item">
+					<a class="menu-mobile__list-link" href="#">Рассылка</a>
+				</li>
+				<li class="menu-mobile__list-item">
+					<a class="menu-mobile__list-link" href="#">Контакты</a>
+				</li>
+			</ul>
+			<!-- /ul.menu-mobile__list -->
+		</nav>
+		<!-- /nav.menu -->
+		<a class="menu-mobile__top-btn" href="#">Зайти в кабинет</a>
+	</div>
+	<!-- /menu-mobile__wrapper -->
+	<!-- -------------------------------- Mobile-menu -------------------------------- -->
 
 	<main class="main">
 		<section class="about">
@@ -159,18 +198,22 @@
 			<!-- /container -->
 		</section>
 		<!-- /section.about -->
-
+	
 		<section class="start">
 			<div class="container">
 				<div class="start__inner">
 					<div class="start__title-box">
-						<svg class="start__img" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M53.9901 42.0097C41.9254 29.945 22.3647 29.945 10.3 42.0097L0.217664 31.9273C17.8507 14.2944 46.4394 14.2944 64.0724 31.9273C81.7054 49.5603 81.7054 78.149 64.0724 95.782L53.9901 85.6997C66.0547 73.635 66.0547 54.0743 53.9901 42.0097Z" fill="url(#paint0_linear_10091:102)"/>
+						<svg class="start__img" width="96" height="96" viewBox="0 0 96 96" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M53.9901 42.0097C41.9254 29.945 22.3647 29.945 10.3 42.0097L0.217664 31.9273C17.8507 14.2944 46.4394 14.2944 64.0724 31.9273C81.7054 49.5603 81.7054 78.149 64.0724 95.782L53.9901 85.6997C66.0547 73.635 66.0547 54.0743 53.9901 42.0097Z"
+								fill="url(#paint0_linear_10091:102)" />
 							<defs>
-							<linearGradient id="paint0_linear_10091:102" x1="39.8907" y1="7.74569" x2="86.1505" y2="72.5852" gradientUnits="userSpaceOnUse">
-							<stop offset="0" stop-color="#DF5950"/>
-							<stop offset="1" stop-color="#451046"/>
-							</linearGradient>
+								<linearGradient id="paint0_linear_10091:102" x1="39.8907" y1="7.74569" x2="86.1505" y2="72.5852"
+									gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#DF5950" />
+									<stop offset="1" stop-color="#451046" />
+								</linearGradient>
 							</defs>
 						</svg>
 						<h2 class="start__title">Быстрый старт</h2>
@@ -181,25 +224,33 @@
 						<div class="start__scale-item ">
 							<p class="start__scale-number start__scale-number100">100%</p>
 							<div class="start__scale-color start__scale-color-100"></div>
-							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /start__scale-item -->
 						<div class="start__scale-item">
 							<p class="start__scale-number start__scale-number75">75%</p>
 							<div class="start__scale-color start__scale-color-75"></div>
-							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /start__scale-item -->
 						<div class="start__scale-item">
 							<p class="start__scale-number start__scale-number50">50%</p>
 							<div class="start__scale-color start__scale-color-50"></div>
-							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /start__scale-item -->
 						<div class="start__scale-item">
 							<p class="start__scale-number start__scale-numberoverall">Итог</p>
 							<div class="start__scale-color start__scale-color-overall"></div>
-							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="start__scale-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /start__scale-item -->
 					</div>
@@ -219,19 +270,25 @@
 						<div class="benefits__item">
 							<embed class="benefits__item-img" src="images/benefits/1.svg">
 							<h6 class="benefits__item-title">Только практические навыки в работе</h6>
-							<p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /benefits__item -->
 						<div class="benefits__item">
 							<embed class="benefits__item-img" src="images/benefits/2.svg">
 							<h6 class="benefits__item-title">Только практические навыки в работе</h6>
-							<p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /benefits__item -->
 						<div class="benefits__item">
 							<embed class="benefits__item-img" src="images/benefits/3.svg">
 							<h6 class="benefits__item-title">Только практические навыки в работе</h6>
-							<p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+							<p class="benefits__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget
+								velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus.
+								Placerat dui.</p>
 						</div>
 						<!-- /benefits__item -->
 					</div>
@@ -242,6 +299,8 @@
 			<!-- /container -->
 		</section>
 		<!-- /section.benefits -->
+
+		<!-- --------------------------------------------------------- -->
 
 		<section class="partners">
 			<div class="container">
@@ -297,7 +356,7 @@
 			<!-- /container -->
 		</section>
 		<!-- /section.partners -->
-
+		
 		<section class="program">
 			<div class="container">
 				<div class="program__text-box">
@@ -310,22 +369,26 @@
 					<div class="program__timeline-left">
 						<div class="program__timeline-left-item">
 							<p class="program__timeline-week program__timeline-left-item-week">Неделя №1</p>
-							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-left-item -->
 						<div class="program__timeline-left-item">
 							<p class="program__timeline-week program__timeline-left-item-week">Неделя №3</p>
-							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-left-item -->
 						<div class="program__timeline-left-item">
 							<p class="program__timeline-week program__timeline-left-item-week">Неделя №5</p>
-							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-left-item -->
 						<div class="program__timeline-left-item">
 							<p class="program__timeline-week program__timeline-left-item-week">Неделя №7</p>
-							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-left-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-left-item -->
 					</div>
@@ -333,17 +396,20 @@
 					<div class="program__timeline-right">
 						<div class="program__timeline-right-item">
 							<p class="program__timeline-week program__timeline-right-item-week">Неделя №2</p>
-							<p class="program__timeline-text program__timeline-right-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-right-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-right-item -->
 						<div class="program__timeline-right-item">
 							<p class="program__timeline-week program__timeline-right-item-week">Неделя №4</p>
-							<p class="program__timeline-text program__timeline-right-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-right-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-right-item -->
 						<div class="program__timeline-right-item">
 							<p class="program__timeline-week program__timeline-right-item-week">Неделя №6</p>
-							<p class="program__timeline-text program__timeline-right-item-text">Красивая часть курса, которая помогает в успехе</p>
+							<p class="program__timeline-text program__timeline-right-item-text">Красивая часть курса, которая
+								помогает в успехе</p>
 						</div>
 						<!-- /program__timeline-right-item -->
 					</div>
@@ -354,7 +420,7 @@
 			<!-- /container -->
 		</section>
 		<!-- /section.program -->
-
+		
 		<section class="teachers">
 			<div class="container">
 				<div class="teachers__text-box">
@@ -390,8 +456,11 @@
 			<!-- /container -->
 		</section>
 		<!-- /section.teachers -->
+
 	</main>
 	<!-- /main -->
+	
+	<!-- ------------------------------------------- -->
 
 	<footer class="footer">
 		<div class="container">
@@ -424,7 +493,7 @@
 		<!-- /container -->
 	</footer>
 	<!-- /footer.footer -->
-
+	
 	<a class="go-to-top" href="#header"></a>
 
 	<script src="js/main.min.js"></script>

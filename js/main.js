@@ -1,3 +1,4 @@
+'ust strict';
 (function () {
     window.__forceSmoothScrollPolyfill__ = true;
 
@@ -16,8 +17,20 @@
  
     goToTop();
 
+    // Burger
+    const burgerBtn = document.querySelector('.burger');
+    const menu = document.querySelector('.menu-mobile__wrapper');
+    const body = document.querySelector('body');
+
+    burgerBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        menu.classList.toggle('menu--active');
+        body.classList.toggle('lock');
+    })
+
     // Timer
-    const date = new Date('Oct 30 2021 14:44:30');
+    const date = new Date('Jan 01 2022 00:00:00');
     
     function counts() {
         const daysEl = document.querySelector('.days');

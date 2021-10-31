@@ -32,6 +32,7 @@
         padding: 10px 30px;
         background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
         border-radius: 50px;
+        white-space: nowrap;
     }
 
     &__content {
@@ -316,7 +317,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     &__item {

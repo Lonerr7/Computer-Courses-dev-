@@ -7,6 +7,7 @@ body {
     color: $white;
     font-size: 16px;
     line-height: 24px;
+    // overflow: hidden;
 }
 
 .container {
@@ -26,7 +27,7 @@ a:hover {
 .go-to-top {
     position: fixed;
     right: 30px;
-    bottom: 65px;
+    bottom: 40px;
     width: 50px;
     height: 50px;
     // border: 1px solid red;
@@ -58,11 +59,78 @@ a:hover {
     }
 
     &::after {
-        top: 22px;
+        top: 21px;
         width: 15px;
         height: 15px;
         transform: translate(-50%, -50%) rotate(45deg);
         border-top: 5px solid $white;
         border-left: 5px solid $white;
+    }
+}
+
+.burger {
+    z-index: 15;
+    position: absolute;
+    top: 30px;
+    right: 18px;
+    border: none;
+    background-color: transparent;
+    display: none;
+    padding: 5px;
+
+    &__line {
+        background-color: rgba($color: $white, $alpha: .9);
+        height: 3px;
+        width: 25px;
+        margin-bottom: 5px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.menu-mobile__wrapper {
+    position: absolute;
+    top: -3000px;
+    width: 100%;    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px 0;   
+    overflow: auto;
+    text-align: center;
+    // transform: translateY(-300%);
+    transition: all .5s;
+}
+
+.menu--active {
+    top: 0;
+    // display: flex;
+}
+
+.menu-mobile {
+
+    &__list-item {
+        margin-bottom: 30px;
+    }
+
+    &__list-link {
+        font-size: 25px;
+        color: $white;
+    }
+
+    &__top-btn {
+        font-size: 25px;
+        color: $white;
+        padding: 10px 30px;
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        border-radius: 50px;
     }
 }
