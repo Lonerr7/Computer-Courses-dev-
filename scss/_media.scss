@@ -353,6 +353,23 @@
     .program {
         padding-bottom: 40px;
     }
+
+    // === footer ===
+    .footer {
+
+        &__input {
+            padding: 12px 30px 9px 30px;
+            margin: 0 auto;
+        }
+
+        &__btn {
+            position: relative;
+            right: 0;
+            top: 0;
+            width: 91%;
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width: 580px) {
@@ -544,6 +561,11 @@
         &__item-speciality {
             margin-bottom: 24px;
         }
+    }
+
+    // === footer ===
+    .footer {
+        padding-top: 30px;
     }
 
     .title {
