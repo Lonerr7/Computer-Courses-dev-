@@ -1,21 +1,22 @@
 'ust strict';
 (function () {
-    window.__forceSmoothScrollPolyfill__ = true;
-
+    
     // Scroll top btn
     function goToTop() {
         const btnTop = $('.go-to-top');
+        const scrollBottom = $(window).scrollTop() + $(window).height();
 
         $(window).on('scroll', () => {
             if ($(this).scrollTop() >= 100) {
                 btnTop.fadeIn();
             } else {
                 btnTop.fadeOut();
-            }
+            }  
         });
     }
- 
+    
     goToTop();
+    // smoothscroll.polyfill();
 
     // Burger
     const burgerBtn = document.querySelector('.burger');
