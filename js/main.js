@@ -1,10 +1,8 @@
-'ust strict';
+'use strict';
 (function () {
-    
     // Scroll top btn
     function goToTop() {
         const btnTop = $('.go-to-top');
-        const scrollBottom = $(window).scrollTop() + $(window).height();
 
         $(window).on('scroll', () => {
             if ($(this).scrollTop() >= 100) {
@@ -16,7 +14,6 @@
     }
     
     goToTop();
-    // smoothscroll.polyfill();
 
     // Burger
     const burgerBtn = document.querySelector('.burger');
