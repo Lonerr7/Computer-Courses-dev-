@@ -185,7 +185,8 @@
 // === main ===
 
 .main {
-    background-image: url(../images/bg.jpg);
+    // background-image: url(../images/bg.jpg);
+    background-color: $black;
 }
 
 // === main ===
@@ -575,7 +576,8 @@
 // === footer ===
 
 .footer {
-    background-image: url(../images/bg.jpg);
+    // background-image: url(../images/bg.jpg);
+    background-color: $black;
     padding-top: 100px;
     padding-bottom: 30px;
 
